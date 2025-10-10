@@ -1,0 +1,40 @@
+.terminal {
+  background-color: #1e1e1e;
+  color: #33ff33;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #33ff33;
+  height: 80vh;
+  overflow-y: auto;
+  text-align: left; /* text aligned left */
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+.input-line input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #33ff33;
+  font-family: inherit;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.prompt {
+  margin-right: 5px;
+}
+
+.output {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  white-space: pre-line;
+  text-align: left;
+}
