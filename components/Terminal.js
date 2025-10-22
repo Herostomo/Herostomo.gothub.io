@@ -118,28 +118,31 @@ const Terminal = () => {
   }, [history]);
 
   return (
-    <div className="terminal">
-      <div className="history">
-        {history.map((h, index) => (
-          <OutputLine key={index} command={h.command} output={h.output} />
-        ))}
-      </div>
+  <div className="terminal">
+    <h1 className="terminal-banner">To see commands type "help"</h1>
 
-      {/* Input line with native caret */}
-      <div className="input-line">
-        <span className="prompt">$ </span>
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={handleCommand}
-          autoFocus
-        />
-      </div>
-
-      <div ref={terminalEnd}></div>
+    <div className="history">
+      {history.map((h, index) => (
+        <OutputLine key={index} command={h.command} output={h.output} />
+      ))}
     </div>
-  );
+
+    <div className="input-line">
+      <span className="prompt">$ </span>
+      <input
+        type="text"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        onKeyDown={handleCommand}
+        autoFocus
+      />
+    </div>
+
+    <div ref={terminalEnd}></div>
+  </div>
+);
+
+
 };
 
 export default Terminal;

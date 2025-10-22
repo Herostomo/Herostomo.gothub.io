@@ -10,7 +10,7 @@
   box-shadow: 0 0 20px #33ff33;
   height: 80vh;
   overflow-y: auto;
-  text-align: left; /* text aligned left */
+  text-align: left;
 }
 
 .input-line {
@@ -37,4 +37,13 @@
   margin-bottom: 10px;
   white-space: pre-line;
   text-align: left;
+}
+.terminal-banner {
+  color: #33ff33;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #33ff33;
+  background: transparent; /* remove dark bar */
 }
